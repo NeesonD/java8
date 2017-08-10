@@ -14,7 +14,7 @@ public class CglibProxy implements MethodInterceptor{
     private Enhancer enhancer = new Enhancer();
 
     public Object getProxy(UserServiceImpl clazz){
-        enhancer.setSuperclass(clazz);
+        enhancer.setSuperclass(clazz.getClass());
         enhancer.setCallback(this);
         return enhancer.create();
     }
