@@ -8,12 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java8" />
-        <module name="reflection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java8" target="1.5" />
-      <module name="reflection" target="1.7" />
+      <module name="java8" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
