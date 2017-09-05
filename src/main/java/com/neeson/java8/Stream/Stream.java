@@ -2,6 +2,7 @@ package com.neeson.java8.Stream;
 
 import org.assertj.core.util.Lists;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,6 +19,12 @@ public class Stream {
                 .skip(1)
                 .limit(4)
                 .sorted().peek(System.out::println).sum();
+
+
+        List<Integer> numWithoutNull = nums.stream().filter(num -> num!= null)
+                .collect(() -> new ArrayList<Integer>(),
+                        (list,item) -> list.add(item),
+                        (list1,list2) -> list1.addAll(list2));
     }
 
 }
