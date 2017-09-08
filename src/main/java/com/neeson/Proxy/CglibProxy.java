@@ -1,5 +1,6 @@
 package com.neeson.Proxy;
 
+
 import org.assertj.core.internal.cglib.proxy.Enhancer;
 import org.assertj.core.internal.cglib.proxy.MethodInterceptor;
 import org.assertj.core.internal.cglib.proxy.MethodProxy;
@@ -9,7 +10,7 @@ import java.lang.reflect.Method;
 /**
  * Created by daile on 2017/8/7.
  */
-public class CglibProxy implements MethodInterceptor{
+public class CglibProxy implements MethodInterceptor {
 
     private Enhancer enhancer = new Enhancer();
 

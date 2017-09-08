@@ -1,8 +1,10 @@
 package com.neeson.java8.Stream;
 
-import org.assertj.core.util.Lists;
+
+import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -13,6 +15,7 @@ public class Stream {
     public static void main(String[] args) {
 
         List<Integer> nums = Lists.newArrayList(1,2,3,7,6,3,null);
+        List<Integer> integers = Arrays.asList(1, 2, 3);
         nums.stream().filter(num -> num != null)
                 .distinct()
                 .mapToInt(num -> num*2)
