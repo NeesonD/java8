@@ -30,7 +30,7 @@ param1 -> statment;
 
 4. 使用Method Reference
 
-lambda表达式的组成部分：
+* lambda表达式的组成部分：
 * 输入参数
 * 可执行语句
 * 存放外部变量的空间(变量引用不可变)，该变量可以不用final修饰，编译器隐式当成final来处理
