@@ -1,4 +1,4 @@
-package com.neeson.design.Observer;
+package com.neeson.design.observer;
 
 import java.util.ArrayList;
 import java.util.List;
