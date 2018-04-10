@@ -7,9 +7,12 @@ import com.neeson.domain.MyObject;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
- * Created by daile on 2017/9/12.
+ *
+ * @author daile
+ * @date 2017/9/12
  */
 public class HessianSerialization {
 
@@ -20,6 +23,7 @@ public class HessianSerialization {
         ho.writeObject(myObject);
 
         byte[] zhansanByte = os.toByteArray();
+        System.out.println(Arrays.toString(zhansanByte));
 
         ByteArrayInputStream is = new ByteArrayInputStream(zhansanByte);
 

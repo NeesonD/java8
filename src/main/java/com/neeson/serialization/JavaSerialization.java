@@ -3,9 +3,12 @@ package com.neeson.serialization;
 import com.neeson.domain.MyObject;
 
 import java.io.*;
+import java.util.Arrays;
 
 /**
- * Created by daile on 2017/9/12.
+ *
+ * @author daile
+ * @date 2017/9/12
  */
 public class JavaSerialization {
 
@@ -19,6 +22,7 @@ public class JavaSerialization {
         out.writeObject(myObject);
 
         byte[] zhansanByte = os.toByteArray();
+        System.out.println("java序列化"+ Arrays.toString(zhansanByte) );
 
         //字节数组输入流
         ByteArrayInputStream is = new ByteArrayInputStream(zhansanByte);
