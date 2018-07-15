@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Time: 10:35
  * Description:
  */
-public class Exector {
+public class Executor {
 
     private static ExecutorService service = Executors.newFixedThreadPool(20);
     private static AtomicInteger a= new AtomicInteger();
