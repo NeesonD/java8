@@ -5,6 +5,7 @@ import com.neeson.domain.DollarAmount;
 
 /**
  * Create by neeson on 2017/9/10
+ * 通过锁顺序来避免死锁
  */
 public class ParamLock {
 

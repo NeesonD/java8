@@ -1,4 +1,4 @@
-package com.neeson.design.Observer;
+package com.neeson.design.observer;
 
 
 /**
