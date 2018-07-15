@@ -1,6 +1,6 @@
 package com.neeson.reflect;
 
-import com.neeson.domain.MyObject;
+import com.neeson.basic.domain.MyObject;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

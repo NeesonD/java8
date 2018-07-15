@@ -15,7 +15,7 @@ public class ServiceAdapter implements AbstractService {
     }
 
     @Override
-    public int sercice2() {
+    public int service2() {
         return 0;
     }
 

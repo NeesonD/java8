@@ -29,7 +29,7 @@ public class TimeTest {
         System.out.println(Instant.now());
         System.out.println(LocalDateTime.now().plus(1, ChronoUnit.HOURS));
         System.out.println(l);
-        System.out.println(Instant.now().plus(1,ChronoUnit.HOURS).toEpochMilli()/1000);
+        System.out.println(Instant.now().plus(1, ChronoUnit.HOURS).toEpochMilli() / 1000);
     }
 
 
@@ -52,7 +52,9 @@ public class TimeTest {
         LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, zone);
     }
 
-    // 02. java.util.Date --> java.time.LocalDate
+    /**
+     * 02. java.util.Date --> java.time.LocalDate
+     */
     public void UDateToLocalDate() {
         Date date = new Date();
         Instant instant = date.toInstant();
