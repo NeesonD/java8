@@ -1,11 +1,13 @@
 package com.neeson.java8.lambda;
 
 /**
- * Created by daile on 2017/9/2.
+ *
+ * @author daile
+ * @date 2017/9/2
  */
 @FunctionalInterface
-public interface Converter<F,T> {
+public interface Converter<F, T> {
 
-    T convert(F from);
+	T convert(F from);
 
 }
