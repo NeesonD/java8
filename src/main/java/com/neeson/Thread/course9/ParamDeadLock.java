@@ -1,7 +1,6 @@
 package com.neeson.Thread.course9;
 
 import com.neeson.domain.Account;
-import sun.net.idn.Punycode;
 
 /**
  * 参数顺序决定死锁
