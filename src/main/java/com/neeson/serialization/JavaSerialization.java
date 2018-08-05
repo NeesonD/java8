@@ -1,6 +1,6 @@
 package com.neeson.serialization;
 
-import com.neeson.domain.MyObject;
+import com.neeson.basic.domain.MyObject;
 
 import java.io.*;
 import java.util.Arrays;

@@ -1,6 +1,5 @@
 package com.neeson.Thread.course9;
 
-import com.neeson.Thread.course3.Point;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -12,21 +11,22 @@ import java.util.Set;
  */
 public class Taxi {
 
-    private Point location,destination;
+    private com.neeson.thread.course3.Point location,destination;
     private final Dispatcher dispatcher;
 
     public Taxi(Dispatcher dispatcher) {
         this.dispatcher = dispatcher;
     }
 
-    public synchronized Point getLocation(){
+    public synchronized com.neeson.thread.course3.Point getLocation(){
         return location;
     }
 
-    public synchronized void setLocation(Point location){
+    public synchronized void setLocation(com.neeson.thread.course3.Point location){
         this.location = location;
-        if (location.equals(destination))
+        if (location.equals(destination)) {
             dispatcher.notify();
+        }
     }
 
     class Dispatcher{

@@ -1,7 +1,8 @@
 package com.neeson.reflect;
 
-import com.neeson.domain.TheAnnotation;
-import com.neeson.domain.TheClass;
+import com.neeson.basic.domain.TheAnnotation;
+import com.neeson.basic.domain.TheClass;
+
 
 import java.lang.annotation.Annotation;
 

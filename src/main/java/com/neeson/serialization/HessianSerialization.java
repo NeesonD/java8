@@ -2,7 +2,7 @@ package com.neeson.serialization;
 
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;
-import com.neeson.domain.MyObject;
+import com.neeson.basic.domain.MyObject;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

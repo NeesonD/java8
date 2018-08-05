@@ -1,6 +1,5 @@
 package com.neeson.Thread.course9;
 
-import com.neeson.Thread.course3.Point;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,18 +10,18 @@ import java.util.Set;
  */
 public class SafeTaxi {
 
-    private Point location,destination;
+    private com.neeson.thread.course3.Point location,destination;
     private final SafeDispatcher safeDispatcher;
 
     public SafeTaxi(SafeDispatcher safeDispatcher) {
         this.safeDispatcher = safeDispatcher;
     }
 
-    public synchronized Point getLocation(){
+    public synchronized com.neeson.thread.course3.Point getLocation(){
         return location;
     }
 
-    public void setLocation(Point location){
+    public void setLocation(com.neeson.thread.course3.Point location){
         boolean reachedDestination;
         synchronized (this){
             this.location = location;
