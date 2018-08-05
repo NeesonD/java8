@@ -28,12 +28,15 @@ public class Reflect {
         //包信息
         Package aPackage = clazz.getPackage();
 
-
+        //父类
         Class superClass = clazz.getSuperclass();
 
+        //方法
         Method[] methods = clazz.getMethods();
 
+        //属性
         Field[] fields = clazz.getFields();
+
 
 
     }

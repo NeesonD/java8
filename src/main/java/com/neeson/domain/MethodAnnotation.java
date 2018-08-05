@@ -6,14 +6,18 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by daile on 2017/8/7.
+ * Created with IntelliJ IDEA.
+ *
+ * @author: neeson
+ * Date: 2018/4/27
+ * Time: 11:17
+ * Description:
  */
-
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface TheAnnotation {
+@Target(ElementType.METHOD)
+public @interface MethodAnnotation {
 
-    public String name();
-    public String value();
+    String desc();
+
 
 }
