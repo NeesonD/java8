@@ -9,7 +9,7 @@ import org.assertj.core.internal.cglib.proxy.MethodInterceptor;
  * @author: neeson
  * Date: 2018/8/3
  * Time: 0:53
- * Description: -XX:PermSize=10M -XX:MamPermSize=10M
+ * Description: -XX:PermSize=10M -XX:MamPermSize=10M 参数已废弃
  */
 public class JavaMethodAreaOOM {
 
