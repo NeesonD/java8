@@ -1,6 +1,6 @@
 package com.neeson.reflect;
 
-import com.neeson.domain.MyObject;
+import com.neeson.basic.domain.MyObject;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -14,7 +14,7 @@ public class Reflect {
         //Class对象
         Class myObjectClass = MyObject.class;
 
-        Class clazz = Class.forName("com.neeson.domain.MyObject");
+        Class clazz = Class.forName("com.neeson.basic.domain.MyObject");
 
         //类名
         String className = clazz.getName();

@@ -12,7 +12,7 @@ public interface AbstractService {
 
     void service1();
 
-    int sercice2();
+    int service2();
 
     String service3();
 
