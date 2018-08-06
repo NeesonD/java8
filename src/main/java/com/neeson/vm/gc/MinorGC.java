@@ -14,7 +14,9 @@ public class MinorGC {
 
     public static void main(String[] args) {
         // testAllocation();
-        testPretenureSizeThreshold();
+        //testPretenureSizeThreshold();
+        testTenuringThreshold();
+
     }
 
     /**
