@@ -9,7 +9,8 @@ public class Novisiblity {
     private static int number;
 
     private static class ReaderThread extends Thread{
-        public void run(){
+        @Override
+		public void run(){
             while (!ready){
                 Thread.yield();
                 System.out.println(number);

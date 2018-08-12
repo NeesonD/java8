@@ -1,7 +1,4 @@
-package com.neeson.thread.annotation;
+package com.neeson.Thread.annotation;
 
-/**
- *
- */
 public @interface NotThreadSafe {
 }
