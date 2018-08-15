@@ -1,7 +1,7 @@
 package com.neeson.basic.domain;
 
-import com.neeson.domain.ClassAnnotation;
-import com.neeson.domain.MethodAnnotation;
+import com.neeson.basic.annotation.ClassAnnotation;
+import com.neeson.basic.annotation.MethodAnnotation;
 
 /**
  * Created by daile on 2017/8/7.
