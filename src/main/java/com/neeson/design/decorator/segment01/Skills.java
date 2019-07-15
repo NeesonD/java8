@@ -1,4 +1,4 @@
-package com.neeson.design.decorator;
+package com.neeson.design.decorator.segment01;
 
 /**
  * Created with IntelliJ IDEA.

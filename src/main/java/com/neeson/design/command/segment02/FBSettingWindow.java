@@ -1,4 +1,4 @@
-package com.neeson.design.command;
+package com.neeson.design.command.segment02;
 
 import java.util.ArrayList;
 import java.util.List;

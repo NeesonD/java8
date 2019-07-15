@@ -1,7 +1,5 @@
 package com.neeson.alg4;
 
-import com.neeson.alg4.Stack;
-
 import java.util.Iterator;
 
 /**
