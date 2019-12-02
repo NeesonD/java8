@@ -18,20 +18,27 @@ public class DisruptorTest {
 
 	static Disruptor<LongEvent> disruptor = new Disruptor(LongEvent::new, bufferSize, DaemonThreadFactory.INSTANCE);
 
-	public static void main(String[] args) {
-		disruptor.handleEventsWith((event,sequence,endOfBatch) ->{
-			System.out.println(event);
-			disruptor.start();
-			RingBuffer<LongEvent> ringBuffer = disruptor.getRingBuffer();
-			ByteBuffer byteBuffer = ByteBuffer.allocate(8);
-//			for (int i = 0; true ; i++) {
-//				byteBuffer.putLong(0, 1);
-//				ringBuffer.publishEvent((event,sequence,buffer)->{
-//					event.setValue(3);
-//				});
-//			}
+	public static void main(String[] args) throws InterruptedException {
+		//注册事件处理器
+		disruptor.handleEventsWith(
+				(event, sequence, endOfBatch) ->
+						System.out.println("E: "+event));
 
-		});
+		//启动Disruptor
+		disruptor.start();
+		//获取RingBuffer
+		RingBuffer<LongEvent> ringBuffer
+				= disruptor.getRingBuffer();
+		//⽣产Event
+		ByteBuffer bb = ByteBuffer.allocate(8);
+		for (long l = 0; true; l++){
+			bb.putLong(0, l);
+			//⽣产者⽣产消息
+			ringBuffer.publishEvent(
+					(event, sequence, buffer) ->
+							event.setValue(buffer.getLong(0)), bb);
+			Thread.sleep(1000);
+		}
 	}
 
 }
